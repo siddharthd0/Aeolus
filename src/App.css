@@ -1,5 +1,4 @@
-main {
-  text-align: center;
-  vertical-align: center;
-  line-height: 100vh
+#parent-div {
+  height: 100%;
+  width: 100%;
 }
