@@ -59,6 +59,13 @@ export default function Home() {
                         isValid: true
                       })
                    });
+                  }else{
+                    setEmail((previousState)=>{
+                      return({
+                        email: previousState.email,
+                        isValid: false
+                      })
+                   });
                   }
                 }}></input>
                 <label className="ContactSection_labels" onChange={(event)=>{
@@ -67,10 +74,10 @@ export default function Home() {
                 <input className="ContactSection_input" type="text" onChange={(event)=>{
                    setName(event.target.value);
                 }}></input>
-            <button className="ContactForm_button" type="submit" onClick={(event)=>{
+            <a href="/"><button className="ContactForm_button" type="submit" onClick={(event)=>{
               event.preventDefault();
               console.log(email,name,message);
-            }}>Send Now</button>
+            }}>Send Now</button></a>
               </div>
               <div className="ContactForm_message">
                 <label className="ContactSection_labels">Your Message</label>
