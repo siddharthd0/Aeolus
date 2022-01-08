@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-
+import Home from './Pages/Home/Home.jsx';
 function App() {
   return (
-    <main>
-      Aerolus
-      <p> test </p>
-      <h1> test </h1>
-    </main>
+    <div>
+      
+    </div>
   );
 }
 
