@@ -1,4 +1,31 @@
+*,
+*::before,
+*::after {
+   -webkit-box-sizing: inherit;
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   min-height: 100vh;
+   
+   font-family: "Montserrat", "sans-serif";
+   /* light-green hex code #91C788 */
+   /* dark-green hex code #6C9966 */
+   /* Light grey used in sub heading hex code #616161 */
+   /* thats it only */
+   /* I have uploaded the graphics I named them as Main_image and Send_message */
+}
+
 #parent-div {
   height: 100%;
   width: 100%;
+  padding: 0 15rem;
 }

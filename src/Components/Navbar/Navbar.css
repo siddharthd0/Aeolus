@@ -1,7 +1,5 @@
 header {
-  height: 10vh;
-  width: 100vw;
-  border: black 100px;
+  /* border: black 100px; */
 }
 
 nav {
@@ -10,5 +8,35 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 3rem 0;
 }
 
+.Logo_name{
+ font-family: "Poppins", "sans-serif";
+ font-size: 2.5rem;
+ font-weight: 600;
+}
+
+.Navbar_link{
+ font-family: "Poppins", "sans-serif";
+ font-weight: 500;
+ font-size: 1.6rem;
+ margin-left: 10rem;
+ text-decoration: none;
+ transition: .5s all ease;
+ color: solid black;
+}
+
+.Navbar_link:hover {
+  color: #91C788;
+
+}
+
+
+.Navbar_link:first-of-type{
+  margin-left: 0;
+}
+
+.Navbar_link:visited{
+ text-decoration: none;
+}

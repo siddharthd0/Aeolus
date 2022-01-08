@@ -1,17 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 export default function Navbar() {
   return (
     <header>
       <nav>
-        <div>
+        <h3 className="Logo_name">
           Aeolus
-        </div>
+        </h3>
         <div>
-          <a href="">Home</a>
-          <a href="">Check Pollution</a>
-          <a href="">About Us</a>
+          {/* the colors I used in the mockup are there in the app.css file as a comment  */}
+            <Link className="Navbar_link" to="/">Home</Link>
+            <Link className="Navbar_link" to="/">Check Pollution</Link>
+            <Link className="Navbar_link" to="/">About us</Link>
+          {/* 
+           */}
         </div>
       </nav>
     </header>
