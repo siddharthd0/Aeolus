@@ -12,7 +12,7 @@ export default function Navbar() {
         <div>
           {/* the colors I used in the mockup are there in the app.css file as a comment  */}
             <Link className="Navbar_link" to="/">Home</Link>
-            <Link className="Navbar_link" to="/">Check Pollution</Link>
+            <Link className="Navbar_link" to="/pollution">Check Pollution</Link>
             <Link className="Navbar_link" to="/">About us</Link>
           {/* 
            */}
