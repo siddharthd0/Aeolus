@@ -6,6 +6,7 @@ import Home from './Pages/Home/Home.jsx';
 import CheckPollution from './Pages/CheckPollution/CheckPollution.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
+
 function App() {
   return (
     <Router>
@@ -19,7 +20,9 @@ function App() {
       
       
     </div>
+
     <Footer/>
+
     </Router>
   );
 }
