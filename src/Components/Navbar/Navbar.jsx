@@ -9,11 +9,11 @@ export default function Navbar() {
         <h3 className="Logo_name">
           Aeolus
         </h3>
-        <div>
+        <div className="Navbar_linkDiv">
           {/* the colors I used in the mockup are there in the app.css file as a comment  */}
             <Link className="Navbar_link" to="/">Home</Link>
             <Link className="Navbar_link" to="/pollution">Check Pollution</Link>
-            <Link className="Navbar_link" to="/">About us</Link>
+            <Link className="Navbar_link" to="/about">About us</Link>
           {/* 
            */}
         </div>

@@ -7,9 +7,9 @@ export default function Footer() {
           Aeolus
         </h3>
         <ul id="footer-list">
-          <li><a href="">Home</a></li>
-          <li><a href="">Check Pollution</a></li>
-          <li><a href="">About Us</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/pollution">Check Pollution</a></li>
+          <li><a href="/about">About Us</a></li>
         </ul>
     </footer>
   );

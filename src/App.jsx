@@ -4,6 +4,7 @@ import {BrowserRouter as Router,  Route, Routes} from "react-router-dom";
 import './App.css';
 import Home from './Pages/Home/Home.jsx';
 import CheckPollution from './Pages/CheckPollution/CheckPollution.jsx';
+import About from './Pages/About/About.jsx';
 import Navbar from './Components/Navbar/Navbar.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/pollution" element={<CheckPollution/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
         </Routes>
       
       

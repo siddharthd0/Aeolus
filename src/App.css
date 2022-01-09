@@ -28,4 +28,25 @@ body {
   height: 100%;
   width: 100%;
   padding: 0 15rem;
+  max-width: 160rem;
+  margin: 0 auto;
 }
+  @media only screen and (max-width: 78.75em){
+    #parent-div{
+        padding: 0 5rem
+    }
+  }
+    @media only screen and (max-width: 66.25em){
+    html{
+      font-size: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 44.375em){
+       #parent-div{
+         padding: 0 1rem;
+       }
+       html{
+         font-size: 45%;
+       }
+  }

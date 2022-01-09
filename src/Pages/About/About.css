@@ -1,0 +1,138 @@
+
+.InfoDiv{
+  /* works now :)cool */
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.InfoWhy {
+  font-size: 3rem;
+  color:black;
+  font-family: "Poppins", "sans-serif";
+  font-weight:700;
+  margin-top:5rem;
+}
+.InfoWhy_Goal {
+  font-size: 3rem;
+  color:green;
+  font-family: "Poppins", "sans-serif";
+  font-weight:700;
+}
+
+.InfoWhy_Text {
+  font-size: 1.6rem;
+  padding-top: 1.3rem;
+  line-height: 3rem;
+  font-family: "Montserrat", "sans-serif";
+  font-weight:400;
+  width: 70%;
+}
+.FeaturesSection{
+  margin: 20rem 0 25rem 0; 
+}
+.TheCreators {
+  font-size: 3rem;
+  margin-top: 5rem;
+  font-family: "Poppins", "sans-serif";
+  font-weight:700;
+  
+}
+.TheCreators_Creators{
+  font-size: 3rem;
+  color:green;
+  font-family: "Poppins", "sans-serif";
+  font-weight:700;
+  
+}
+
+.TheCreators_Rest {
+  font-size: 3rem;
+  font-weight:700;
+  font-family: "Poppins", "sans-serif";
+
+}
+
+
+.InfoCard1 {
+  background-color:#91C788 ;
+  box-sizing:border-box;
+  border-radius: 1rem;
+  /* I decreased the border radius since everything was having a low border radius */
+  /* ok, also can u help me pls put the image on the right and the text on the left*/
+  /* ya leave it to me */
+  /*alright*/
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 2rem;
+  width: 20%;
+  padding: 3rem;
+  color:azure;
+  height: 12rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+   transition: 1s all ease;
+   font-weight:400;
+}
+.InfoCard1:hover {
+  transform: scale(1.1);
+  
+
+}
+
+.AboutImage {
+  width: 35%;
+}
+
+@media only screen and (max-width: 50em){
+.AboutImage{
+  display: none;
+}  
+}
+
+@media only screen and (max-width: 36.25em){
+.InfoDiv{
+  margin: 15rem auto 0 auto;
+  width: 60%
+}
+.InfoWhy_Text{
+  width: 100%;
+}
+.TheCreators {
+  margin-left: 20%;
+}
+.InfoCard1 {
+  width: 40%;
+}
+.TheCreators {
+  font-size: 2.7rem;
+}
+.TheCreators_Creators{
+  font-size: 2.7rem;
+}
+
+.TheCreators_Rest {
+  font-size: 2.7rem;
+}
+.InfoWhy{
+  font-size: 2.7rem;
+}
+.InfoWhy_Goal{
+  font-size: 2.7rem;
+}
+}
+
+@media only screen and (max-width: 27.5em){
+  .InfoDiv{
+  width: 80%
+}
+.TheCreators {
+  margin-left: 10%;
+}
+.InfoCard1 {
+  width: 60%;
+}
+}

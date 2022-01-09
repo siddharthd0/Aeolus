@@ -17,6 +17,12 @@ nav {
  font-weight: 600;
 }
 
+.Navbar_linkDiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .Navbar_link{
  font-family: "Poppins", "sans-serif";
  font-weight: 500;
@@ -40,3 +46,20 @@ nav {
 .Navbar_link:visited{
  text-decoration: none;
 }
+
+  @media only screen and (max-width: 36.25em){
+    nav{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .Logo_name{
+      padding-right: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+  @media only screen and (max-width: 27.5em){
+        .Navbar_link{
+        margin-left: 6rem;
+        }        
+  }

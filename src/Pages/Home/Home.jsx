@@ -20,7 +20,7 @@ export default function Home() {
         <div className="HeroSection_text">
           <h1 className="Heading">Get to know the air you breathe</h1>
           <h2 className="SubHeading">Know when to stay in and when to breathe without worry</h2>
-          <Link to="/"><button className="HeroSection_button" type="button">What's polluting the air?</button></Link>
+          <Link to="/pollution"><button className="HeroSection_button" type="button">What's polluting the air?</button></Link>
         </div>
       </section>
       <section className="FeatureSection">
@@ -83,7 +83,6 @@ export default function Home() {
                 <input className="ContactSection_input" type="text" onChange={(event)=>{
                    setName(event.target.value);
                 }}></input>
-             {}
             <a href={"mailto:test@gmail.com?subject=A%20message%20to%20the%20Aeolus%20team&I%20am%20" + (name.split(' ').join('%20'))+"%20and%20my%20message%20is%20"+(message.split(' ').join('%20'))+"%20and%20here%20is%20my%20email%20"+ email}><button className="ContactForm_button" type="button" onClick={(event)=>{
               if(!isValid){
               event.preventDefault();
@@ -103,6 +102,19 @@ export default function Home() {
                 <textarea className="ContactForm_TextArea" onChange={(event)=>{
                    setMessage(event.target.value);
                 }}/>
+                <a href={"mailto:test@gmail.com?subject=A%20message%20to%20the%20Aeolus%20team&I%20am%20" + (name.split(' ').join('%20'))+"%20and%20my%20message%20is%20"+(message.split(' ').join('%20'))+"%20and%20here%20is%20my%20email%20"+ email}><button className="ContactForm_buttonHidden" type="button" onClick={(event)=>{
+              if(!isValid){
+              event.preventDefault();
+              emailInput.current.className = "ContactSection_inputRed";
+              setEmail((previousState)=>{
+                      return({
+                        email: previousState.email,
+                        isValid: false,
+                        red: true
+                      })
+                   });
+              }
+            }}>Send Now</button></a>
               </div>
           </form>
         <img className="ContactSection_image" src={imageTwo}/>

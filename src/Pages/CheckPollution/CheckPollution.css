@@ -2,15 +2,24 @@
   padding: 1rem 2rem;
   width: 25rem;
   height: 4.5rem;
-  background-color: rgb(100, 173, 88);
+  background-color: rgb(134, 211, 123);
   font-family: "Montserrat", "sans-serif";
+  margin-bottom: 0.5rem;
   border: none;
   border-radius: 4px;
-  margin-bottom: 3rem;
-  color: white;
+  color: rgb(15, 9, 9);
+  margin-right: 2rem;
+}
+.PollutionInput:focus-visible {
+  border: 4px solid #6C9966;
+ transition: .5s all ease;
+ outline: none;
+}
+.PollutionInput::placeholder{
+ color: white;
 }
 .PollutionOutput {
-  font-size: 5rem;
+  font-size: 2rem;
   font-family: "Montserrat", "sans-serif";
 }
 .AreaText {
@@ -28,28 +37,165 @@
   background-position: 0%;
   -webkit-transition: background 300ms ease-in-out;
   transition: background 300ms ease-in-out;
+  margin-top: .6rem;
 }
 .PollutionButton:hover {
   background-position: 100%;
   color: #6C9966;
 }
 .PollutionButton{
-  border: 3.5px solid rgb(15, 54, 9);
   font-family: "Montserrat", "sans-serif";
   border-radius: 5px;
   font-weight: 500;
   width: 15rem;
-  color: rgb(19, 43, 16);
+  /* color: rgb(19, 43, 16); */
+  color: white;
   font-size:1.5rem;
   padding: 1rem 2rem;
   background-color: white;
   transition: .5s all ease;
-  margin-left: 2rem;
 }
 
 .PollutionButton:hover {
-  color:rgb(8, 59, 23);
+  color:#6C9966;
   background-color:rgb(186, 207, 184);
   cursor: pointer;
 }
 
+.GeoLabel {
+  font-size: 1.9rem;
+  
+}
+
+.GeoLabel_Output {
+  font-size: 1.9rem;
+  font-weight: 800;
+
+}
+.GeoLabel_Special {
+  color:rgb(62, 87, 58);
+}
+
+.InfoCard_Pollution {
+  background-color:#91C788 ;
+  border-radius: 2rem;
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  color:azure;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+   transition: 1s all ease;
+}
+.InfoCard_Pollution_mid{
+  background-color:#fd7e14 ;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  color:azure;
+  height: 20rem;
+  align-items: center;
+  margin-bottom: 4rem;
+   transition: 1s all ease;
+}
+.InfoCard_Pollution_high{
+ background-color:#fa5252 ;
+  border-radius: 2rem;
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  color:azure;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+   transition: 1s all ease;
+}
+.InfoCard_Pollution:hover {
+  transform: scale(1.2);
+}
+
+
+.InfoCard_Pollution_mid:hover {
+  transform: scale(1.2);
+}
+.InfoCard_Pollution_high:hover {
+  transform: scale(1.2);
+}
+  
+.CardTitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+
+}
+
+.DataText_1 {
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  font-family: "Poppins", "sans-serif";
+}
+
+.DataText_2 {
+  color:#6C9966;
+}
+
+
+@media only screen and (min-width: 661px){
+  .CardHolder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 6fr); 
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem; 
+    padding: 0 2rem;
+  }
+
+  .CardHolder_2 {
+    display: grid; 
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem; 
+    margin-bottom: 10rem;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 660px){
+  .CardHolder{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 6fr); 
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem; 
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 460px){
+  .CardHolder{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 12fr); 
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem; 
+    padding: 0 2rem;
+  }
+
+  .CardHolder_2 {
+    display: grid; 
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 4fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem; 
+    margin-bottom: 10rem;
+    padding: 0 2rem;
+  }
+}

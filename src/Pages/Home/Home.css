@@ -1,3 +1,6 @@
+a{
+  text-decoration: none;
+}
 .HeroSection{
   display: flex;
   margin: 12rem 0 25rem 0;
@@ -18,8 +21,8 @@
 }
 .SubHeading{
   font-family: "Poppins", "sans-serif";
+  width: 100%;
   font-size: 1.9rem;
-  width: 35ch;
   color: #616161;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -66,7 +69,7 @@
   display: flex;
   flex-direction:column;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   font-size: 1.75rem;
   width: 25%;
   padding: 3rem;
@@ -163,6 +166,19 @@
   background-color: white;
   transition: .5s all ease;
 }
+.ContactForm_buttonHidden{
+  border: 3.5px solid #6C9966;
+  font-family: "Montserrat", "sans-serif";
+  border-radius: 5px;
+  font-weight: 500;
+  width: 15rem;
+  color: #6C9966;
+  font-size:1.5rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  transition: .5s all ease;
+  display: none;
+}
 .ContactForm_TextArea:focus-visible , .ContactSection_input:focus-visible{
  border: 4px solid #6C9966;
  transition: .5s all ease;
@@ -178,4 +194,144 @@
   background-color:#6C9966;
   cursor: pointer;
 }
+.ContactForm_buttonHidden:hover {
+  color:azure;
+  background-color:#6C9966;
+  cursor: pointer;
+}
+    @media only screen and (max-width: 53.125em){
+    .Heading{
+      font-size: 3.8rem;
+    }
+    .ContactForm_message{
+     margin-left: 5rem;
+     }
+    .Section_heading{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    }
+    .InfoCard {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      width: 30%;
+   }
+   .ContactSection{
+     margin: 15rem 0;
+   }
+   .FeatureSection{
+     margin: 15rem 0;
+   }
+   .HeroSection{
+     margin: 12rem 0 ;
+   }
+  }
+    @media only screen and (max-width: 50em){
+      .ContactSection_image{
+        display: none;
+      }
+      .Heading{
+        font-size: 3.5rem;
+      }
+      .Section_heading{
+        font-size: 3.2rem;
+      }
+       .SubHeading{
+         font-size: 1.7rem;
+       }
+       .HeroSection_text{
+        width: 45%;
+      }
+    }
+     @media only screen and (max-width: 44.375em){
+       .HeroSection_button{
+          padding: 0.8rem 1.6rem;
+          font-size: 1.4rem;
+      }
+     }
+      @media only screen and (max-width: 36.25em){
+         .Heading{
+        font-size: 3.2rem;
+      }
+      .Section_heading{
+        font-size: 3rem;
+      }
+      .WhatsNew{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .InfoCard{
+        margin-top: 4rem;
+        width: 58%;
+      }
+      .HeroImage{
+        display: none;
+      }
+      .HeroSection{
+        justify-content: center;
+      }
+      .HeroSection_text{
+        width: 60%;
+      }
+      .ContactSection_main{
+        justify-content: center;
+      }
+      .Contact_div{
+        width: 60%;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .Section_heading{
+        padding-left: 20%;
+      }
+      .ContactForm_message{
+        margin-left: 0;
+      }
+      .ContactForm_button{
+        display: none;
+      }
+      .ContactForm_buttonHidden {
+        display: block;
+        margin-top: 3rem;
+      }
+      .ContactForm_TextArea{
+        width: 35rem;
+      }
+      .ContactSection_input{
+        width: 35rem;
+      }
+      .ContactSection_inputRed{
+        width: 35rem;
+      }
+      }
+      @media only screen and (max-width: 27.5em){
+        .HeroSection_text{
+          width: 80%;
+        }
+        .Section_heading{
+          padding-left: 10%;
+        }
+        .InfoCard{
+          width: 80%;
+        }
+        .Contact_div{
+          width: 80%;
+        }
+        .ContactForm_TextArea{
+          width: 100%;
+        }
+        .ContactSection_input{
+          width: 100%;
+        }
+        .ContactSection_inputRed{
+          width: 100%;
+        }
+        .ContactForm{
+          width: 100%;
+        }
+        .ContactForm_message{
+          width: 100%;
+        }
+      }
+
 /* use class names instead of nesting like nav li a */
