@@ -22,9 +22,9 @@ export default function CheckPollution() {
   const [acidRain, setAcidRain]= useState(0);
   const [photoChemicalSmog, setPhotoChemicalSmog]= useState("");
   //API Keys
-  const geoCodeAPIKey = process.env['GEOCODEAPIKEY'];
-  const planetosAPIKey = process.env['PLANETOSAPIKEY'];
-  const weatherBitAPIKey = process.env['WEATHERBITAPIKEY'];
+  const geoCodeAPIKey = "0e6fe47cc6msh989cbca6171aec1p13da1djsn909108e8e065";
+  const planetosAPIKey = "94a090e942624033bc44b5fca8bb7e1a";
+  const weatherBitAPIKey = "3fa1a92f0c5843e5b1083ebe07cc6866";
 
   const fetchGeoAPI = useCallback((query) => {
     let latitude = "";
