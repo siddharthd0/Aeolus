@@ -1,5 +1,5 @@
 
-**Demo** - https://aeolus.roryjames.repl.co
+**Demo** - https://aeolus-air.vercel.app
 
 ## An Intro to Our Project
 The goal of our web app is to forecast acid rain and photochemical smog, atmospheric events which negatively impact the health of humans and the environment. With the causes of said events being largely attributed to human activities, the app also aims to be an educational tool, creating awareness by making lifestyle suggestions catered to the air quality of the location the user inputs. We wanted our app to not be just a dashboard displaying numbers grabbed from an API, but rather an inferring tool capable of making abstractions out of data. 
